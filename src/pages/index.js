@@ -20,7 +20,7 @@ export default ({ data }) => (
     <SEO title="Home" />
     <div>
       <h1> My Emergence As A Web Developer</h1>
-      <h4>{data.allMarkdownRemark.totalCount}</h4>
+      <h4>Number of Blog Posts: {data.allMarkdownRemark.totalCount}</h4>
     </div>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
